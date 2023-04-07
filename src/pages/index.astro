@@ -1,0 +1,25 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import { Footer } from "../components/Footer";
+import { Profile } from "../components/Profile";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { themeClass } from "../styles/atom.css";
+import GlobalStyles from "../components/GlobalStyles.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <GlobalStyles />
+  </head>
+  <body class={themeClass}>
+    <Profile />
+    <Header />
+
+    <h1 class="title">{SITE_TITLE}</h1>
+    <main>Main</main>
+    <Footer />
+  </body>
+</html>
