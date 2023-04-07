@@ -23,6 +23,9 @@ export const atom = {
   flex: style({
     display: "flex",
   }),
+  justifyCenter: style({
+    justifyContent: "center",
+  }),
   flexInlineBlock: style({
     display: "inline-flex",
   }),

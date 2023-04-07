@@ -1,7 +1,13 @@
 import { style } from "@vanilla-extract/css";
 import { atom, vars } from "../styles";
 
-export const container = style([atom.flexInlineBlock, atom.gap]);
+export const container = style([
+  atom.flexInlineBlock,
+  atom.paddingVertical,
+  {
+    gap: "16px",
+  },
+]);
 
 export const profileName = style([atom.bold, atom.title]);
 
@@ -12,6 +18,9 @@ export const profileSize = style({
 
 export const image = style([atom.circle, profileSize]);
 
-export const text = style({
-  fontSize: "14px",
-});
+export const text = style([
+  atom.title,
+  {
+    fontSize: "14px",
+  },
+]);

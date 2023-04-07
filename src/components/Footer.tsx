@@ -13,7 +13,7 @@ import { container, copyright, icons } from "./Footer.css";
 
 export const Footer = () => {
   return (
-    <div className={container}>
+    <footer className={container}>
       <div className={icons}>
         <a href={GITHUB_URL} target="_blank">
           <FaGithub className={atom.touchable} size={24} />
@@ -26,6 +26,6 @@ export const Footer = () => {
         </a>
       </div>
       <p className={copyright}>Made by {GITHUB_USERNAME}</p>
-    </div>
+    </footer>
   );
 };

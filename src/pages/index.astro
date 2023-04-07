@@ -1,11 +1,14 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
 import { Footer } from "../components/Footer";
 import { Profile } from "../components/Profile";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { themeClass } from "../styles/atom.css";
 import GlobalStyles from "../components/GlobalStyles.astro";
+import { LatestArticle } from "../components/LatestArticle";
+import { Header } from "../components/Header";
+import { Layout } from "../layouts";
+import { PostList } from "../components/PostList";
 ---
 
 <!DOCTYPE html>
@@ -15,11 +18,15 @@ import GlobalStyles from "../components/GlobalStyles.astro";
     <GlobalStyles />
   </head>
   <body class={themeClass}>
-    <Profile />
     <Header />
+    <Layout>
+      <!-- <Header /> -->
 
-    <h1 class="title">{SITE_TITLE}</h1>
-    <main>Main</main>
-    <Footer />
+      <!-- <h1 class="title">{SITE_TITLE}</h1> -->
+      <LatestArticle />
+      <PostList />
+      <div></div>
+      <Footer />
+    </Layout>
   </body>
 </html>
