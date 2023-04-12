@@ -1,4 +1,5 @@
 import { SITE_TITLE } from "../consts";
+import { DarkModeIcon } from "./icons/DarkModeIcon";
 
 export const Header = () => {
   return (
@@ -15,6 +16,7 @@ export const Header = () => {
         height: "50px",
         borderBottom: "1px solid #bfbfbf77",
         userSelect: "none",
+        justifyContent: "space-between",
       }}
     >
       <a
@@ -27,6 +29,9 @@ export const Header = () => {
       >
         {SITE_TITLE}
       </a>
+      <div>
+        <DarkModeIcon />
+      </div>
     </header>
   );
 };

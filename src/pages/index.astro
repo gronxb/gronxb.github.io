@@ -9,6 +9,7 @@ import { LatestArticle } from "../components/LatestArticle";
 import { Header } from "../components/Header";
 import { Layout } from "../layouts";
 import { PostList } from "../components/PostList";
+import { Tag } from "../components/Tag";
 ---
 
 <!DOCTYPE html>
@@ -20,6 +21,11 @@ import { PostList } from "../components/PostList";
   <body class={themeClass}>
     <Header />
     <Layout>
+      <Tag>
+        <Tag.Item />
+        <Tag.Item />
+        <Tag.Item />
+      </Tag>
       <!-- <Header /> -->
 
       <!-- <h1 class="title">{SITE_TITLE}</h1> -->
