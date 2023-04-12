@@ -1,4 +1,5 @@
 import { SITE_TITLE } from "../consts";
+import { MoonIcon } from "./icon/MoonIcon";
 
 export const Header = () => {
   return (
@@ -8,7 +9,7 @@ export const Header = () => {
         background: "white",
         display: "flex",
         alignItems: "center",
-
+        justifyContent: "space-between",
         fontSize: "16px",
         paddingLeft: "12px",
         paddingRight: "12px",
@@ -29,6 +30,8 @@ export const Header = () => {
       >
         {SITE_TITLE}
       </a>
+
+      <MoonIcon />
     </header>
   );
 };
