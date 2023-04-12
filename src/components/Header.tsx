@@ -8,6 +8,8 @@ export const Header = () => {
         background: "white",
         display: "flex",
         alignItems: "center",
+
+        fontSize: "20px",
         paddingLeft: "12px",
         paddingRight: "12px",
         width: "100%",
