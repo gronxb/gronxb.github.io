@@ -28,6 +28,7 @@ export const LatestArticle = () => {
                 marginTop: "4px",
                 marginBottom: "12px",
                 fontSize: "12px",
+                color: "#666",
               }}
             >
               2023/04/12
@@ -39,6 +40,7 @@ export const LatestArticle = () => {
         style={{
           flex: 1,
           display: "flex",
+          maxHeight: "30rem",
           justifyContent: "center",
           alignItems: "center",
         }}

@@ -9,7 +9,7 @@ export const Header = () => {
         display: "flex",
         alignItems: "center",
 
-        fontSize: "20px",
+        fontSize: "16px",
         paddingLeft: "12px",
         paddingRight: "12px",
         width: "100%",
